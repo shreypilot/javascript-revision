@@ -54,9 +54,9 @@ function problemOne() {
       return 8;
     }  
   };
-  problemSix();
-  //Prediction:
-  //Actual:
+  //problemSix();
+  //Prediction: 8
+  //Actual:8
   
   function problemSeven() {
     var bar = function() {
@@ -68,51 +68,51 @@ function problemOne() {
     }
   };
   //problemSeven();
-  //Prediction
+  //Prediction:3
+  //Actual:3
+  
+  function problemEight() {
+    var a = 1;
+    function b() {
+      a = 10;
+      return;
+      function a() {}
+    }
+    b();
+    console.log(a);
+  }
+  //problemEight();
+  //Prediction:
   //Actual:
   
-//   function problemEight() {
-//     var a = 1;
-//     function b() {
-//       a = 10;
-//       return;
-//       function a() {}
-//     }
-//     b();
-//     console.log(a);
-//   }
-//   //problemEight();
-//   //Prediction:
-//   //Actual:
+  // function problemNine() {
+  //   var x = 1; 
+  //   console.log(x + " " + y); 
+  //   let y = 2; 
+  // };
+  // problemNine();
+  // //Prediction:
+  // //Actual:
   
-//   function problemNine() {
-//     var x = 1; 
-//     console.log(x + " " + y); 
-//     let y = 2; 
-//   };
-//   //problemNine();
-//   //Prediction:
-//   //Actual:
+  function problemTen() {
+    var x = 1; 
+    console.log(x + " " + y); 
+    const y = 2; 
+  };
+  //problemTen();
+  //Prediction:
+  //Actual:
   
-//   function problemTen() {
-//     var x = 1; 
-//     console.log(x + " " + y); 
-//     const y = 2; 
-//   };
-//   //problemTen();
-//   //Prediction:
-//   //Actual:
-  
-//   function problemEleven() {
-//     function parent() {
-//       var hoisted = "I'm a variable";
-//       function hoisted() {
-//           return "I'm a function";
-//       }
-//       return hoisted(); 
-//     }
-//     console.log(parent());
-//   };
-//   //problemEleven();
-//   //Prediction:
-//   //Actual:
+  // function problemEleven() {
+  //   function parent() {
+  //     var hoisted = "I'm a variable";
+  //     function hoisted() {
+  //         return "I'm a function";
+  //     }
+  //     return hoisted(); 
+  //   }
+  //   console.log(parent());
+  // };
+  //  problemEleven();
+  //Prediction:
+  //Actual:
